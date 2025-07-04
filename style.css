@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #c8d6d0;
+    margin: 0;
+}
+
+header {
+    background-color: #06321e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.navigation {
+   display: flex;
+   padding: 15px 10px 0 10px;
+   gap: .7rem; 
+   @media (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navigation a:hover {
+    color: #87d7b2;
+}
+
+.intro {
+    background-image: linear-gradient(rgba(21, 28, 26, 0.639)), url(images/wallpaper.jpeg);
+    color: whitesmoke;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    background-position: center;
+    backdrop-filter: blur(100px);
+    font-size: 1.5rem;
+}
+
+.book a {
+    color: whitesmoke;
+    text-decoration: none;
+    border: solid #3e785d;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #06321e99;
+}
+.book a:hover {
+    color: #87d7b2;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.about {
+    text-align: center;
+    padding-inline: 100px;
+    font-size: large;
+}
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 700px) {
+        grid-template-columns: none; 
+    }
+}
+
+.single-out {
+    border: solid #c4d6ce;
+    background-color: #dae3df;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.two-column-layout ul {
+    list-style-type: none;
+}
+
+.button {
+    text-align: center;
+    margin: 5px;
+}
+
+button {
+    background-color: #0b482c;
+    border: solid #032012;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(144, 234, 204);
+
+}
+
+button a:hover {
+    color: rgb(93, 184, 153);
+}
+
+.history a:hover {
+    color: #429f77;
+    text-decoration: underline;
+}
+
+.history a {
+    text-decoration: none;
+    color: rgb(163, 224, 204);
+}
+
+footer {
+    background-color: #06321e;
+    border-top: solid rgb(126, 136, 131);
+    color: rgb(163, 224, 204); 
+    text-align: center;
+    padding: 10px;
+}
